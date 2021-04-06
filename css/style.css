@@ -45,6 +45,10 @@ h1, h2 {
     font-family: mader, sans-serif;
 }
 
+h3 {
+    font-family: 'Londrina Solid', cursive;
+}
+
 #home {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/pexels-pixabay-531880.jpg");
     background-size: cover;
