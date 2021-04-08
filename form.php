@@ -19,11 +19,8 @@
     <meta name="theme-color" content="#000000">
 
     <!--  Styles  -->
-    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Philosopher&family=Rock+Salt&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="css/http_cdnjs.cloudflare.com_ajax_libs_twitter-bootstrap_4.5.3_css_bootstrap.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
@@ -105,6 +102,7 @@
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 </body>
 </html>

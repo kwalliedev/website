@@ -1,6 +1,7 @@
 @font-face {
     font-family: mader;
     src: url("../css/MADER-REGULAR.otf");
+    font-display: swap;
 }
 
 input[type='text']:focus::-webkit-input-placeholder {
