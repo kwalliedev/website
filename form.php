@@ -7,9 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
 
+    <!--  Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+
+    <!--  Styles  -->
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Philosopher&family=Rock+Salt&display=swap"
           rel="stylesheet">
-
     <link rel="stylesheet" href="css/http_cdnjs.cloudflare.com_ajax_libs_twitter-bootstrap_4.5.3_css_bootstrap.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,15 +53,15 @@
 
         $message = "";
 
-        $message.= "From: " . $naam . "\r\n";
-        $message.= "Email: " . $email . "\r\n";
-        $message.= "Bericht: " . "\r\n" . $bericht;
+        $message .= "From: " . $naam . "\r\n";
+        $message .= "Email: " . $email . "\r\n";
+        $message .= "Bericht: " . "\r\n" . $bericht;
 
 
         $naar = "kwalliedev@gmail.com";
 
         if (empty($check)) {
-           // mail($naar, $onderwerp, $message);
+            // mail($naar, $onderwerp, $message);
 
             echo "<h1 class='text-center mt-3 mb-5'>Je bericht is verzonden</h1>
                         <div class='mx-auto w-75'>
