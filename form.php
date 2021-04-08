@@ -25,7 +25,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
+
 </head>
 <body>
 <nav class="navbar navbar-expand-md fixed-top navbar-dark">
@@ -37,13 +39,13 @@
         <div class="navbar-nav text-center">
             <a class="nav-item nav-link p-md-0" href="index.html">Home</a>
             <a class="nav-item nav-link p-md-0 ml-md-4 mr-md-4" href="index.html#who">Wie</a>
-            <a class="nav-item nav-link p-md-0 ml-md-4 mr-md-4" href="index.html#contact">Contact</a>
+            <a class="nav-item nav-link p-md-0" href="index.html#contact">Contact</a>
         </div>
     </div>
 </nav>
 
 <section class="min-vh-100 m-5 pt-5">
-    <div class="container ">
+    <div class="container">
         <?php
         $check = $_POST['check'];
         $naam = $_POST['naam'];
@@ -59,29 +61,29 @@
 
 
         $naar = "kwalliedev@gmail.com";
+        if ($_POST) {
+            if (empty($check) && !empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
+                // mail($naar, $onderwerp, $message);
 
-        if (empty($check)) {
-            // mail($naar, $onderwerp, $message);
-
-            echo "<h1 class='text-center mt-3 mb-5'>Je bericht is verzonden</h1>
+                echo "<h1 class='text-center text-black mt-3 mb-5'>Je bericht is verzonden</h1>
                         <div class='mx-auto w-75'>
-                            <p>
-                                We zullen je snel contacteren op volgend email adres: <span class='font-weight-bold'>$email</span>
+                            <p class='text-black'>
+                                We zullen je snel contacteren op volgend email adres: <span class='font-weight-bold text-black'>$email</span>
                             </p>
                             <div class='text-left'>
-                                <p>Je bericht was:</p>
-                                <p class='font-weight-bold'>$bericht</p>
+                                <p class='text-black'>Je bericht was:</p>
+                                <p class='font-weight-bold text-black'>$bericht</p>
                             </div>
                             <div class='text-right mb-3'>
                                 <a href='index.html' class='btn btn-outline-dark'>Ga terug</a>                          </div>
                             </div>";
-        } else {
-            echo "<div class='text-center mt-3 mb-3'>
-                        <p>Gelieve het formulier opnieuw in te dienen</p>
-                        <a href='index.html' class='btn btn-outline-dark'>Ga terug</a>
+            } else {
+                echo "<div class='text-center mt-3 mb-3'>
+                        <p class='text-black'>Gelieve het formulier opnieuw in te dienen</p>
+                        <a href='index.html#contact' class='btn btn-outline-dark'>Ga terug</a>
                       </div>";
+            }
         }
-
         ?>
     </div>
 
@@ -90,7 +92,17 @@
 <hr class="m-0">
 
 <footer class="footer m-auto text-center bg-dark">
-    <p class="m-0 p-2 text-white">&copy; Kwallie 2021</p>
+    <div class="m-0 p-2">
+        <span>&copy; Kwallie 2021</span>
+        <a href="https://twitter.com/KwallieV" class="pl-4 pr-4" target="_blank" data-toggle="tooltip"
+           data-placement="bottom" title="Bezoek kwallie's Twitter">
+            <i class="text-white fab fa-twitter fa-2x text-white"></i>
+        </a>
+        <a class="" href="https://github.com/kwalliedev" target="_blank" data-toggle="tooltip"
+           data-placement="bottom" title="Bezoek kwallie's GitHub">
+            <i class="text-white fab fa-github fa-2x text-white"></i>
+        </a>
+    </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>

@@ -17,3 +17,12 @@ input[type='text']:focus::-webkit-input-placeholder {
     border: 1px solid #000;
     border-radius: 15px;
 }
+
+.text-black{
+    color: black !important;
+    background-color: inherit;
+}
+
+.navbar-dark {
+    background-color: rgb(30, 30, 30) !important;
+}
