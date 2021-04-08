@@ -1,0 +1,19 @@
+@font-face {
+    font-family: mader;
+    src: url("../css/MADER-REGULAR.otf");
+}
+
+input[type='text']:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+.nav-link {
+    font-family: mader, sans-serif;
+    font-size: 2rem;
+    color: whitesmoke !important;
+}
+
+.container{
+    border: 1px solid #000;
+    border-radius: 15px;
+}
