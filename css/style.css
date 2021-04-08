@@ -69,11 +69,11 @@ h3 {
     border-radius: 25%;
 }
 
-#who a, #contact a {
+a {
     color: whitesmoke;
 }
 
-#who a, #contact a:hover {
+a:hover {
     color: rgb(150, 150, 150);
 }
 
@@ -105,8 +105,8 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-    html {
-        scroll-snap-type: y proximity;
+    body {
+        scroll-snap-type: y mandatory;
     }
 
     section {
@@ -124,10 +124,6 @@ h3 {
     .fixed-top.scrolled {
         background-color: black !important;
         transition: background-color 200ms linear;
-    }
-
-    .max-width {
-        max-width: 50%;
     }
 
     #home h1 {

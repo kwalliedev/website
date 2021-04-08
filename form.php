@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark">
     <a class="navbar-brand d-md-none"><img src="img/kwallie1.png" alt="Kwallie" height="40"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
         <span class="navbar-toggler-icon"></span>
@@ -26,6 +26,7 @@
         <div class="navbar-nav text-center">
             <a class="nav-item nav-link p-md-0" href="index.html">Home</a>
             <a class="nav-item nav-link p-md-0 ml-md-4 mr-md-4" href="index.html#who">Wie</a>
+            <a class="nav-item nav-link p-md-0 ml-md-4 mr-md-4" href="index.html#contact">Contact</a>
         </div>
     </div>
 </nav>
@@ -58,15 +59,15 @@
                             </p>
                             <div class='text-left'>
                                 <p>Je bericht was:</p>
-                                <p>$bericht</p>
+                                <p class='font-weight-bold'>$bericht</p>
                             </div>
                             <div class='text-right mb-3'>
-                                <a href='index.html#contact' class='btn btn-outline-dark'>Ga terug</a>                          </div>
+                                <a href='index.html' class='btn btn-outline-dark'>Ga terug</a>                          </div>
                             </div>";
         } else {
             echo "<div class='text-center mt-3 mb-3'>
                         <p>Gelieve het formulier opnieuw in te dienen</p>
-                        <a href='index.html#contact' class='btn btn-outline-dark'>Ga terug</a>
+                        <a href='index.html' class='btn btn-outline-dark'>Ga terug</a>
                       </div>";
         }
 
