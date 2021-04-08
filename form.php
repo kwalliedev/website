@@ -41,8 +41,8 @@
     </div>
 </nav>
 
-<section class="min-vh-100 m-5 pt-5">
-    <div class="container">
+<section class="min-vh-100 m-3">
+    <div class="container text-center row mx-auto">
         <?php
         $check = $_POST['check'];
         $naam = $_POST['naam'];
@@ -62,18 +62,18 @@
             if (empty($check) && !empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
                 // mail($naar, $onderwerp, $message);
 
-                echo "<h1 class='text-center text-black mt-3 mb-5'>Je bericht is verzonden</h1>
-                        <div class='mx-auto w-75'>
-                            <p class='text-black'>
+                echo "<h1 class='text-center text-black mt-3 mb-5 col-12'>Je bericht is verzonden</h1>
+                        <div class='m-auto w-75 col-12 row'>
+                            <p class='text-black col-12'>
                                 We zullen je snel contacteren op volgend email adres: <span class='font-weight-bold text-black'>$email</span>
                             </p>
-                            <div class='text-left'>
+                            <div class='col-12'>
                                 <p class='text-black'>Je bericht was:</p>
                                 <p class='font-weight-bold text-black'>$bericht</p>
                             </div>
-                            <div class='text-right mb-3'>
+                            <div class='text-right mb-3 col-12'>
                                 <a href='index.html' class='btn btn-outline-dark'>Ga terug</a>                          </div>
-                            </div>";
+                           </div>";
             } else {
                 echo "<div class='text-center mt-3 mb-3'>
                         <p class='text-black'>Gelieve het formulier opnieuw in te dienen</p>
