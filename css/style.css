@@ -14,7 +14,7 @@
     opacity: 0;
 }
 
-.nav-link, h1, h2, h3, h4, h5, p {
+.nav-link, h1, h2, h3, h4, h5, p, span {
     color: whitesmoke !important;
     background-color: inherit !important;
 }
@@ -70,6 +70,7 @@ h3 {
 }
 
 a {
+    text-decoration: none;
     color: whitesmoke;
 }
 
@@ -102,11 +103,15 @@ a:hover {
     #who img {
         max-width: 175px;
     }
+
+    .width {
+        max-width: 80% !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        scroll-snap-type: y mandatory;
+    html {
+        scroll-snap-type: y proximity;
     }
 
     section {
@@ -124,6 +129,10 @@ a:hover {
     .fixed-top.scrolled {
         background-color: black !important;
         transition: background-color 200ms linear;
+    }
+
+    .width {
+        max-width: 50% !important;
     }
 
     #home h1 {
