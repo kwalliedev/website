@@ -9,6 +9,11 @@
     scroll-behavior: smooth;
 }
 
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+}
+
 .nav-link, h1, h2, h3, h4, h5, p {
     color: whitesmoke !important;
     background-color: inherit !important;
@@ -45,6 +50,10 @@ h1, h2 {
     font-family: mader, sans-serif;
 }
 
+h3 {
+    font-family: 'Londrina Solid', cursive;
+}
+
 #home {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/pexels-pixabay-531880.jpg");
     background-size: cover;
@@ -52,7 +61,7 @@ h1, h2 {
     background-repeat: no-repeat;
 }
 
-#who h1 {
+#who h1, #contact h1 {
     font-size: 4.5rem;
 }
 
@@ -115,6 +124,10 @@ h1, h2 {
     .fixed-top.scrolled {
         background-color: black !important;
         transition: background-color 200ms linear;
+    }
+
+    .max-width {
+        max-width: 50%;
     }
 
     #home h1 {
