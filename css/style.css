@@ -113,14 +113,6 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    html {
-        scroll-snap-type: y proximity;
-    }
-
-    section {
-        scroll-snap-align: start;
-    }
-
     .nav-link {
         font-size: 2rem;
     }
@@ -144,5 +136,15 @@ a:hover {
 
     #home h2 {
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    html {
+        scroll-snap-type: y proximity;
+    }
+
+    section {
+        scroll-snap-align: start;
     }
 }
