@@ -60,7 +60,7 @@
         $naar = "kwalliedev@gmail.com";
         if ($_POST) {
             if (empty($check) && !empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
-                // mail($naar, $onderwerp, $message);
+                 mail($naar, $onderwerp, $message);
 
                 echo "<h1 class='text-center text-black mt-3 mb-5 col-12'>Je bericht is verzonden</h1>
                         <div class='m-auto w-75 col-12 row'>
