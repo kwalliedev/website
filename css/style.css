@@ -108,7 +108,7 @@ a:hover {
     }
 
     .width {
-        max-width: 80% !important;
+        max-width: 90% !important;
     }
 }
 
@@ -127,7 +127,7 @@ a:hover {
     }
 
     .width {
-        max-width: 50% !important;
+        max-width: 70% !important;
     }
 
     #home h1 {
@@ -139,7 +139,11 @@ a:hover {
     }
 }
 
-/*@media screen and (min-width: 1200px){*/
+@media screen and (min-width: 1200px){
+
+    .width {
+        max-width: 50% !important;
+    }
 /*    html {*/
 /*        scroll-snap-type: y proximity;*/
 /*    }*/
@@ -147,4 +151,4 @@ a:hover {
 /*    section {*/
 /*        scroll-snap-align: start;*/
 /*    }*/
-/*}*/
+}
